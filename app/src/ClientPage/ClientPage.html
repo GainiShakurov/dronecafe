@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col s8">
+        <ul class="collection with-header">
+            <li class="collection-header"><h4>Список заказанных блюд</h4></li>
+            <li class="collection-item avatar" ng-repeat="order in orderdata">
+                <img src="{{order.dish.image}}" alt="" class="circle" width="60">
+                <span class="title">{{order.dish.title}}</span>
+                <span class="secondary-content">{{order.state | stateTransl : order.state }}</span>
+            </li>
+            <li class="collection-item collection_item__button"><div><a href="#!/add" class="btn-to-addpage secondary-content waves-effect waves-light btn">Добавить</a></div></li>
+        </ul>
+    </div>
+    <div class="col s4">
+        <ul class="collection with-header">
+            <li class="collection-header"><h4>Информация об аккаунте</h4></li>
+            <li class="collection-item">Имя - <span style="font-weight: bold">{{ userdata.name }}</span></li>
+            <li class="collection-item">Баланс - <span style="font-weight: bold">{{ userdata.money }}</span></li>
+            <li class="collection-item collection_item__button"><div><button ng-click="addMoney()" class="secondary-content waves-effect waves-light btn">Пополнить</button></div></li>
+        </ul>
+    </div>
+</div>

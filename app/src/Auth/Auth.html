@@ -1,0 +1,28 @@
+<div class="section">
+    <div class="row">
+        <form class="col s6 offset-s3" name="authForm" novalidate ng-submit="submit(userData)">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="first_name" type="text" class="validate" ng-required="required" ng-model="userData.name">
+                    <label for="first_name">Имя</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12" ng-class="{'has-error': authForm.email.$dirty && authForm.email.$invalid }">
+                    <input id="email" type="email" class="validate" name="email" ng-required="required" ng-model="userData.email">
+                    <label for="email" data-error="wrong" data-success="">Email</label>
+                    <div ng-show="authForm.email.$dirty">
+                        <p ng-show="authForm.email.$error.email">Поле Email имеет неверный формат</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <button class="btn waves-effect waves-light" type="submit" ng-disabled="authForm.$invalid">Войти
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

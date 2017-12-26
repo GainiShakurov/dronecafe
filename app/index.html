@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="DroneApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Drone Cafe</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-resource/angular-resource.js"></script>
+    <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+    <link href="../node_modules/materialize-css/dist/css/materialize.css" rel="stylesheet">
+
+    <script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="../node_modules/angular-socket-io/socket.js"></script>
+
+
+
+</head>
+
+<body>
+
+<header>
+    <nav class="teal lighten-2">
+        <div class="container">
+            <a href="#!/auth" class="brand-logo">Drone Cafe</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+
+    <ng-view></ng-view>
+
+</div>
+
+<script src="src/DroneApp.js"></script>
+<script src="src/Auth/AuthCtrl.js"></script>
+<script src="src/ClientPage/ClientCtrl.js"></script>
+<script src="src/CreateOrderPage/CreateOrderCtrl.js"></script>
+<script src="src/KitchenPage/KitchenPageCtrl.js"></script>
+
+<script src="src/CurrentUserService/CurrentUserService.js"></script>
+<script src="src/DishesService/DishesService.js"></script>
+
+<script src="src/FilterState/FilterState.js"></script>
+
+<link href="./assets/css/style.css" rel="stylesheet">
+
+</body>
+
+</html>
