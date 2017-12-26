@@ -4,6 +4,7 @@
   "description": "Дипломная работа",
   "main": "index.js",
   "scripts": {
+    "start-server": "node server",
     "start": "http-server -p 8000 .",
     "test": "mocha test/drone.spec.js",
     "preupdate-webdriver": "npm install",

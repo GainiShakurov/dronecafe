@@ -1,5 +1,5 @@
 module.exports.config = {
-    allScriptsTimeout: 12000,
+    allScriptsTimeout: 20000,
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: [
         '*spec.js'

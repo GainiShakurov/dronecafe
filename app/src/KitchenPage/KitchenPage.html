@@ -3,9 +3,9 @@
 
         <ul class="collection with-header">
             <li class="collection-header"><h4>Заказанные блюда</h4></li>
-            <li class="collection-item collection_item__extended" ng-repeat="order in kitchenOrderData">
+            <li class="collection-item kitchenOrderData collection_item__extended" ng-repeat="order in kitchenOrderData">
                 <div>{{order.dish.title}}
-                    <button ng-click="setCooking(order)" class="secondary-content waves-effect waves-light btn">Начать готовить</button>
+                    <button ng-click="setCooking(order)" class="btn-orderdata secondary-content waves-effect waves-light btn">Начать готовить</button>
                 </div>
             </li>
         </ul>
@@ -14,9 +14,9 @@
     <div class="col s12">
         <ul class="collection with-header">
             <li class="collection-header"><h4>Готовящиеся блюда</h4></li>
-            <li class="collection-item collection_item__extended" ng-repeat="order in kitchenCookingData">
+            <li class="collection-item kitchenCookingData collection_item__extended" ng-repeat="order in kitchenCookingData">
                 <div>{{order.dish.title}}
-                    <button ng-click="setDelivered(order)" class="secondary-content waves-effect waves-light btn">Готово</button>
+                    <button ng-click="setDelivered(order)" class="btn-cookingdata secondary-content waves-effect waves-light btn">Готово</button>
                 </div>
             </li>
         </ul>
