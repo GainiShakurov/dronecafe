@@ -4,8 +4,7 @@
   "description": "Дипломная работа",
   "main": "index.js",
   "scripts": {
-    "start-server": "node server",
-    "start": "http-server -p 8000 .",
+    "start": "node server",
     "test": "mocha test/drone.spec.js",
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
@@ -15,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Gaini@bitbucket.org/Gaini/drone-cafe.git"
+    "url": "git+https://github.com/GainiShakurov/dronecafe.git"
   },
   "author": "Gaini Shakurov",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Gaini/drone-cafe#readme",
+  "homepage": "https://github.com/GainiShakurov/dronecafe.git#readme",
   "dependencies": {
     "angular": "^1.6.8",
     "angular-resource": "^1.6.8",
