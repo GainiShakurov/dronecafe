@@ -3,7 +3,7 @@
 <http://dronecafe-gaini.herokuapp.com/#!/>
 
 Архитектура
-
+<pre>
 src
 
 -Auth
@@ -51,3 +51,4 @@ src
 dbquery.js
 
 server.js
+</pre>
