@@ -5,7 +5,7 @@ const expect = require('chai').expect;
 describe('Email Validation', function() {
 
     beforeEach(function() {
-        browser.get('#!/auth');
+        browser.get('#!/');
     });
 
     it('Email wrong', function() {

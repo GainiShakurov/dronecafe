@@ -9,7 +9,7 @@ module.exports.config = {
         'browserName': 'chrome'
     },
 
-    baseUrl: 'http://127.0.0.1:8000/app/',
+    baseUrl: 'http://localhost:3000/',
     framework: 'mocha',
     mochaOpts: {
         reporter: "spec",
