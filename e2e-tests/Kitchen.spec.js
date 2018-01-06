@@ -6,8 +6,8 @@ describe('Kitchen Page', function() {
 
     let countOrdered,
         countReady,
-        updcountOrdered,
-        updcountReady;
+        updCountOrdered,
+        updCountReady;
 
     beforeEach(function() {
         browser.get('#!/kitchen');
@@ -15,7 +15,6 @@ describe('Kitchen Page', function() {
         element.all(by.repeater('order in kitchenOrderData')).count().then(function(count) {
             countOrdered = count;
         });
-
         element.all(by.repeater('order in kitchenCookingData')).count().then(function(count) {
             countReady = count;
         });
@@ -25,18 +24,19 @@ describe('Kitchen Page', function() {
     });
 
     it('Ordered click', function() {
+        browser.get('#!/kitchen');
 
-        console.log('countOrdered', countOrdered);
+        let list = element.all(by.repeater('order in kitchenOrderData'));
 
-        element.all(by.repeater('order in kitchenOrderData')).count().then(function(count) {
-            updcountOrdered = count;
-        });
+        expect(list.count()).eventually.to.equal(countOrdered - 1);
+    });
 
-        console.log('updcountOrdered', updcountOrdered);
+    it('Cooking click', function() {
+        browser.get('#!/kitchen');
 
+        let list = element.all(by.repeater('order in kitchenCookingData'));
 
-        expect(updcountOrdered + 1).eventually.to.equal(countOrdered);
-
+        expect(list.count()).eventually.to.equal(countReady + 1);
     });
 
 });
