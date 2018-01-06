@@ -3,7 +3,7 @@ droneApp.controller('ClientCtrl', function($scope, $rootScope, mySocket, Current
     $scope.userdata = CurrentUserService.getUser();
 
     if ($.isEmptyObject($scope.userdata)) {
-        $location.path('/auth');
+        $location.path('/');
     }
 
     mySocket.on('add_money', function(userData) {

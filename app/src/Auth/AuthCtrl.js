@@ -2,7 +2,7 @@ droneApp.controller('AuthCtrl', function ($scope, $rootScope, $location, mySocke
 
     mySocket.on('auth_user', function(userData) {
         CurrentUserService.addUser(userData);
-        $location.path('/');
+        $location.path('/client');
     });
 
     $scope.MySocket = mySocket;

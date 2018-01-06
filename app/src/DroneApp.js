@@ -6,15 +6,15 @@ module('DroneApp')
         function config($routeProvider) {
 
             $routeProvider.
-            when('/', {
+            when('/client', {
                 templateUrl: 'src/ClientPage/ClientPage.html',
                 controller: 'ClientCtrl'
             }).
-            when('/add', {
+            when('/menu', {
                 templateUrl: 'src/CreateOrderPage/CreateOrderPage.html',
                 controller: 'CreateOrderCtrl'
             }).
-            when('/auth', {
+            when('/', {
                 templateUrl: 'src/Auth/Auth.html',
                 controller: 'AuthCtrl'
             }).
