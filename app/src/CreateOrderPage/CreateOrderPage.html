@@ -11,7 +11,7 @@
                                 <img src="{{dish.image}}" alt="" class="circle" width="60">
                                 <p class="title"><b>{{dish.title}}.</b> Цена - <b>{{dish.price}}</b></p>
                                 <span>{{dish.ingredients}}</span>
-                                <a ng-if="( userdata.money >= dish.price )" href="#!" class="secondary-content waves-effect waves-light btn btn-adddish" ng-click="addDish(dish)">Заказать</a>
+                                <a ng-if="( userdata.money >= dish.price )" href="#!/client" class="secondary-content waves-effect waves-light btn btn-adddish" ng-click="addDish(dish)">Заказать</a>
                             </li>
                         </ul>
                     </div>
