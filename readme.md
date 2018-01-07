@@ -1,6 +1,6 @@
 Чтобы запустить проект - введите в консоль npm start
 
-<http://dronecafe-gaini.herokuapp.com/#!/>
+<https://dronecafe-gaini.herokuapp.com/#!/>
 
 Архитектура
 <pre>
