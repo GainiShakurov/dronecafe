@@ -29,7 +29,7 @@ module('DroneApp')
         }
     ])
     .factory('mySocket', function (socketFactory) {
-        var myIoSocket = io.connect('http://localhost:3000/');
+        var myIoSocket = io.connect('https://dronecafe-gaini.herokuapp.com/');
 
         mySocket = socketFactory({
             ioSocket: myIoSocket
